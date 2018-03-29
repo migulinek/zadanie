@@ -30,7 +30,7 @@ var guessInteger = setInterval(function(){
 
 	xhr.send(params);
 
-}, 500);
+}, 50);
 
 function nextNumberToTry(minVal, maxVal){
 	return Math.floor(Math.random() * (maxVal - minVal + 1)) + minVal;

@@ -20,6 +20,7 @@ s.on('request', function(request, response) {
 
 		  if(global.rand === num){
 			  msg = 'ok';
+			  global.rand = Math.floor(Math.random() * 10000) + 1;
 		  }else if(global.rand > num){
 			  msg = 'toosmall';
 		  }else{
